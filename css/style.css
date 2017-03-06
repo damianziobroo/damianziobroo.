@@ -1,0 +1,489 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efeee9;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 96%;
+    padding: 0 2%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.navigation-title,
+.portfolio-title,
+.quotes-title,
+.about-title,
+.articles-title,
+.contact-title {
+    display: none;
+}
+
+.page-header {
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hamburger-btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
+    min-height: 37px;
+    cursor: pointer;
+}
+
+.hamburger-btn:focus {
+    outline: none;
+}
+
+.hamburger-icon {
+    width: 50px;
+}
+
+.hamburger-close-icon {
+    width: 50px;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+}
+
+.page-navigation li {
+    list-style-type: none;
+    padding: 30px;
+    transition: 1s;
+}
+
+.page-header.scroll-site .page-navigation li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.page-navigation a {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.page-navigation a:hover {
+    color: red;
+}
+
+.page-logo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    display: none;
+    letter-spacing: 2px;
+}
+
+.page-logo-in-nav a {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+}
+
+.page-logo-in-nav a:hover {
+    color: #000000;
+}
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner p {
+    font-size: 2.4rem;
+    font-weight: 100;
+    max-width: 550px;
+}
+
+.aarhus-container {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.aarhus {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.aarhus-title {
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.aarhus-text {
+    max-width: 730px;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.aarhus-btn {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: 2px solid #222222;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.aarhus-btn:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.portfolio,
+.about,
+.articles {
+    padding-top: 50px;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio li {
+    list-style-type: none;
+    width: 33.33333%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio li:nth-child(1) {
+    background-image: url(../img/article1.png);
+}
+
+.portfolio li:nth-child(2) {
+    background-image: url(../img/article2.png);
+}
+
+.portfolio li:nth-child(3) {
+    background-image: url(../img/article3.png);
+}
+
+.portfolio li:nth-child(4) {
+    background-image: url(../img/article4.png);
+}
+
+.portfolio li:nth-child(5) {
+    background-image: url(../img/article5.png);
+}
+
+.portfolio li:nth-child(6) {
+    background-image: url(../img/article6.png);
+}
+
+.portfolio a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #ffffff;
+    height: 40vh;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.portfolio a:hover {
+    opacity: 0.7;
+    background-color: #000000;
+}
+
+.quotes {
+    padding: 10vw;
+}
+
+.quotes-text {
+    font-weight: 100;
+    font-size: 3.6rem;
+    max-width: 730px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.about-img {
+    width: 50%;
+    height: 100%;
+}
+
+.about-text {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 300px;
+    margin: auto;
+}
+
+.about-text h3,
+.about-text p {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.about-text h3 {
+    text-transform: uppercase;
+    color: #6d6081;
+    letter-spacing: 3px;
+}
+
+.about-text p {
+    color: #6d6081;
+    padding-bottom: 20px;
+}
+
+.articles {
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articles article {
+    max-width: 350px;
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.articles h3,
+.articles p {
+    max-width: 250px;
+}
+
+.articles p {
+    font-weight: 300;
+}
+
+.articles-btn {
+    background-color: #ffffff;
+    border: 0;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: #4eaeff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.articles-btn:hover {
+    color: #1e71b1;
+}
+
+.articles-btn:focus {
+    outline: none;
+}
+
+.contact {
+    background-color: #353535;
+}
+
+.contact .wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.left-column {
+    max-width: 350px;
+    padding: 20px;
+    margin: auto 0;
+}
+
+.left-column p {
+    font-weight: 300;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.page-footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia-links {
+    display: flex;
+}
+
+.socialmedia-links li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.fa {
+    color: #353535;
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+.fa:hover {
+    transform: scale(2.5);
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-youtube-play:hover {
+    color: #cc181e;
+}
+
+@media (max-width: 980px) {
+    .page-header {
+        flex-wrap: wrap;
+    }
+    .hamburger-btn {
+        display: inline-block;
+    }
+    .hamburger-close-icon {
+        display: none;
+    }
+    .hamburger-icon.open {
+        display: none;
+    }
+    .hamburger-close-icon.open {
+        display: inline-block;
+    }
+    .page-navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+    }
+    .page-navigation {
+        display: none;
+    }
+    .page-navigation.open {
+        display: block;
+    }
+    .page-logo-in-nav {
+        display: none;
+    }
+    .page-header.scroll-site .page-navigation li {
+        padding: 30px;
+    }
+    .portfolio li {
+        width: 50%;
+        height: 40vh;
+    }
+    .portfolio a {
+        height: 40vh;
+    }
+    .page-logo {
+        display: inline;
+    }
+    .contact .wrapper {
+        flex-direction: column;
+    }
+    .left-column {
+        max-width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 816px) {
+    .portfolio li {
+        width: 100%;
+        height: 50vh;
+    }
+    .portfolio a {
+        height: 50vh;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .page-footer .wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .page-footer ul {
+        padding: 0;
+    }
+}
